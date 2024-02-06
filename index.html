@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculator with TailwindCss</title>
+</head>
+<body class="bg-black">
+    <h1 class="text-blue-900  max-w-md lg:max-w-3xl mx-auto p-16 font-extrabold text-4xl flex justify-center">Calculator with TailwindCSS</h1>
+    
+    <form class="p-5 bg-gray-900 w-full md:w-1/2 lg:w-1/4 m-2 mx-auto rounded-lg shadow-x">
+        <input name="display" type="text" id="inputText" class="p-7 mb-6 w-full rounded-lg bg-gray-900 text-white font-5xl text-5xl text-right">
+        <!--Grid -->
+        <div class="grid grid-cols-4 gap-4">
+            <input type="button" value="AC" class="font-bold text-2xl bg-black text-green-400 cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value =''">
+            <input type="button" value="DEL" class="font-bold text-2xl bg-black text-green-400 cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value = display.value.toString().slice(0, -1)">
+            <input type="button" value="%" class="font-bold text-2xl bg-black text-green-400 cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='%'">
+            <input type="button" value="/" class="font-bold text-2xl bg-black text-green-400 cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='/'">
+            <input type="button" value="7" class="font-bold text-2xl bg-gray-700 text-white cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='7'">
+            <input type="button" value="8" class="font-bold text-3xl bg-gray-700 text-white cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='8'">
+            <input type="button" value="9" class="font-bold text-3xl bg-gray-700 text-white cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='9'">
+            <input type="button" value="*" class="font-bold text-3xl bg-black text-green-400 cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='*'">
+            <input type="button" value="4" class="font-bold text-3xl bg-gray-700 text-white cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='4'">
+            <input type="button" value="5" class="font-bold text-3xl bg-gray-700 text-white cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='5'">
+            <input type="button" value="6" class="font-bold text-3xl bg-gray-700 text-white cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='6'">
+            <input type="button" value="-" class="font-bold text-3xl bg-black text-green-400 cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='-'">
+            <input type="button" value="1" class="font-bold text-3xl bg-gray-700 text-white cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='1'">
+            <input type="button" value="2" class="font-bold text-3xl bg-gray-700 text-white cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='2'">
+            <input type="button" value="3" class="font-bold text-3xl bg-gray-700 text-white cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='3'">
+            <input type="button" value="+" class="font-bold text-3xl bg-black text-green-400 cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='+'">
+            <input type="button" value="." class="font-bold text-3xl bg-gray-700 text-white cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='.'">
+            <input type="button" value="0" class=" font-bold text-3xl bg-gray-700 text-white cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value +='0'">
+            <input type="button" value="=" class="col-span-2 font-bold text-3xl bg-black text-green-400 cursor-pointer hover:bg-slate-400 p-5 flex items-center justify-center rounded-full" onclick="form.display.value =eval(form.display.value)">
+            
+        </div> 
+    </form>
+    
+    
+</body>
+</html>
